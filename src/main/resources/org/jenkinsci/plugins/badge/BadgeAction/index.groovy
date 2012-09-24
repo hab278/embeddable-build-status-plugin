@@ -30,7 +30,7 @@ l.layout {
 </style>
 """)
 
-        def base =  "${app.rootUrl}${my.project.url}.replaceAll(":8080","")";
+        def base =  "${app.rootUrl}${my.project.url}".replaceAll(":8080","");
         def badge = base + "badge/icon"
         h3 {
             text(_("Image"))
